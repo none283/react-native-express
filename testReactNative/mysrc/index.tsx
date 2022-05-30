@@ -18,7 +18,7 @@ const MyIndex: React.FC<Props> = () => {
   const [texts, setText] = useState("");
 
   function submit() {
-    axios.post(`http://172.16.125.158:3000/database/`, {
+    axios.post(`http://localhost:3000/database/`, {
       word: texts,
     });
   }
